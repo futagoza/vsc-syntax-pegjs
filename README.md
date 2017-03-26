@@ -1,6 +1,4 @@
-# vsc-syntax-pegjs
-
-Syntax highlighting for PEG.js in Visual Studio Code
+An extension for VS Code that provides syntax highlighting for PEG.js and some of its variants.
 
 # languages
 
