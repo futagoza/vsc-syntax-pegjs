@@ -45,6 +45,9 @@
                 },
                 {
                     "include": "#string-literal"
+                },
+                {
+                    "include": "#choice"
                 }
             ]
         },
@@ -108,6 +111,10 @@
         "assignment": {
             "name": "keyword.operator.assignment",
             "match": "="
+        },
+        "choice": {
+            "name": "keyword.operator.logical",
+            "match": "/"
         },
         "string-literal": {
             "name": "punctuation.definition.string.quoted.pegjs",
