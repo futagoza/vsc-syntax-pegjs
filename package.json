@@ -19,7 +19,7 @@
             {
                 "id": "peg-grammar",
                 "aliases": [
-                    "PEG",
+                    "PEG.js (Grammar)",
                     "peg"
                 ],
                 "extensions": [
@@ -30,6 +30,7 @@
             {
                 "id": "pegjs",
                 "aliases": [
+                    "PEG.js (ES6+)",
                     "PEG.js",
                     "pegjs",
                     "peg.js"
@@ -42,9 +43,7 @@
             {
                 "id": "pegcoffee",
                 "aliases": [
-                    "PEG.coffee",
-                    "pegcoffee",
-                    "peg.coffee"
+                    "PEG.js (CoffeeScript)"
                 ],
                 "extensions": [
                     ".pegcoffee"
