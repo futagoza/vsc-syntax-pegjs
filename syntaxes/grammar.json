@@ -185,7 +185,10 @@
                 {
                     "name": "string.quoted.double.pegjs",
                     "begin": "\"",
-                    "end": "\"",
+                    "end": "\"\\s*(i?)",
+                    "endCaptures": {
+                        "1": { "name": "keyword.other.pegjs" }
+                    },
                     "patterns": [
                         {
                             "include": "#string-content"
@@ -199,7 +202,10 @@
                 {
                     "name": "string.quoted.single.pegjs",                    
                     "begin": "'",
-                    "end": "'",
+                    "end": "'\\s*(i?)",
+                    "endCaptures": {
+                        "1": { "name": "keyword.other.pegjs" }
+                    },
                     "patterns": [
                         {
                             "include": "#string-content"
