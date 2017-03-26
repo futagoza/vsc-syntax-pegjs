@@ -1,0 +1,33 @@
+{
+    "name": "PEG.js File",
+    "fileTypes": [
+        "pegcoffee"
+    ],
+    "scopeName": "source.pegcoffee",
+    "patterns": [
+        {
+            "include": "#initializer-block"
+        },
+        {
+            "include": "grammar.pegjs"
+        }
+    ],
+    "repository": {
+        "initializer-block": {
+            "name": "source.coffee.embedded.pegcoffee",
+            "begin": "\\{",
+            "beginCaptures": {
+                "0": { "name": "meta.brace.curly.begin.pegcoffee" }
+            },
+            "end": "\\}",
+            "endCaptures": {
+                "0": { "name": "meta.brace.curly.end.pegcoffee" }
+            },
+            "patterns": [
+                {
+                    "include": "source.coffee"
+                }
+            ]
+        }
+    }
+}

@@ -38,6 +38,18 @@
                     ".pegjs"
                 ],
                 "configuration": "./configuration.json"
+            },
+            {
+                "id": "pegcoffee",
+                "aliases": [
+                    "PEG.coffee",
+                    "pegcoffee",
+                    "peg.coffee"
+                ],
+                "extensions": [
+                    ".pegcoffee"
+                ],
+                "configuration": "./configuration.json"
             }
         ],
         "grammars": [
@@ -50,6 +62,11 @@
                 "language": "pegjs",
                 "scopeName": "source.pegjs",
                 "path": "./syntaxes/pegjs.json"
+            },
+            {
+                "language": "pegcoffee",
+                "scopeName": "source.pegcoffee",
+                "path": "./syntaxes/pegcoffee.json"
             }
         ]
     }
