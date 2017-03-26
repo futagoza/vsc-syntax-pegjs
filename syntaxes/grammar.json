@@ -115,15 +115,15 @@
             "match": "(\\$[$\\w]+|[_a-zA-Z][$\\w]*)"
         },
         "assignment": {
-            "name": "keyword.operator.assignment",
+            "name": "keyword.operator.assignment.pegjs",
             "match": "="
         },
         "choice": {
-            "name": "keyword.operator.logical",
+            "name": "keyword.operator.logical.pegjs",
             "match": "/"
         },
         "predicate": {
-            "name": "keyword.operator.bitwise",
+            "name": "keyword.operator.bitwise.pegjs",
             "match": "[$&!]"
         },
         "quantifier": {
@@ -187,7 +187,7 @@
             ]
         },
         "any-character": {
-            "name": "string.unquoted",
+            "name": "string.unquoted.pegjs",
             "match": "\\."
         },
         "eos": {
