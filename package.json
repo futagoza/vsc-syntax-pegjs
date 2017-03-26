@@ -1,7 +1,7 @@
 {
     "name": "pegjs-syntax",
     "description": "Syntax highlighting for PEG.js in Visual Studio Code",
-    "version": "0.1.0-dev",
+    "version": "0.1.0",
     "publisher": "futagozaryuu",
     "displayName": "PEG.js Syntax",
     "repository": {
