@@ -106,7 +106,7 @@
             "match": "[_$a-zA-Z][$\\w]*"
         },
         "assignment": {
-            "name": "keyword.operator.rule",
+            "name": "keyword.operator.assignment",
             "match": "="
         },
         "string-literal": {
