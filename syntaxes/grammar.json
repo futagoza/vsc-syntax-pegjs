@@ -9,16 +9,13 @@
             "include": "#comments"
         },
         {
-            "include": "#eos"
-        },
-        {
-            "include": "#initializer-block"
-        },
-        {
-            "include": "#assignment"
+            "include": "#assignment-operator"
         },
         {
             "include": "#expressions"
+        },
+        {
+            "include": "#eos"
         }
     ],
     "repository": {
@@ -38,25 +35,31 @@
         "expressions": {
             "patterns": [
                 {
+                    "include": "#character-class"
+                },
+                {
+                    "include": "#initializer-block"
+                },
+                {
                     "include": "#initializer-label"
                 },
                 {
-                    "include": "#ruleName"
+                    "include": "#rule-name"
+                },
+                {
+                    "include": "#any-character"
                 },
                 {
                     "include": "#string-literal"
                 },
                 {
-                    "include": "#choice"
+                    "include": "#choice-operator"
                 },
                 {
-                    "include": "#predicate"
+                    "include": "#predicate-operators"
                 },
                 {
-                    "include": "#quantifier"
-                },
-                {
-                    "include": "#character-class"
+                    "include": "#quantifier-operators"
                 },
                 {
                     "include": "#sequence"
@@ -116,23 +119,23 @@
                 }
             }
         },
-        "ruleName": {
+        "rule-name": {
             "name": "entity.name.class.pegjs",
             "match": "(\\$[$\\w]+|[_a-zA-Z][$\\w]*)"
         },
-        "assignment": {
+        "assignment-operator": {
             "name": "keyword.operator.assignment.pegjs",
             "match": "="
         },
-        "choice": {
+        "choice-operator": {
             "name": "keyword.operator.logical.pegjs",
             "match": "/"
         },
-        "predicate": {
+        "predicate-operators": {
             "name": "keyword.operator.bitwise.pegjs",
             "match": "[$&!]"
         },
-        "quantifier": {
+        "quantifier-operators": {
             "patterns": [
                 {
                     "name": "keyword.operator.ternary.pegjs",
@@ -179,9 +182,6 @@
         "string-literal": {
             "name": "punctuation.definition.string.quoted.pegjs",
             "patterns": [
-                {
-                    "include": "#any-character"
-                },
                 {
                     "name": "string.quoted.double.pegjs",
                     "begin": "\"",
