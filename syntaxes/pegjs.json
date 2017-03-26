@@ -1,0 +1,33 @@
+{
+    "name": "PEG.js File",
+    "fileTypes": [
+        "pegjs"
+    ],
+    "scopeName": "source.pegjs",
+    "patterns": [
+        {
+            "include": "#initializer-block"
+        },
+        {
+            "include": "grammar.pegjs"
+        }
+    ],
+    "repository": {
+        "initializer-block": {
+            "name": "source.js.embedded.pegjs",
+            "begin": "\\{",
+            "beginCaptures": {
+                "0": { "name": "meta.brace.curly.begin.pegjs" }
+            },
+            "end": "\\}",
+            "endCaptures": {
+                "0": { "name": "meta.brace.curly.end.pegjs" }
+            },
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        }
+    }
+}

@@ -26,6 +26,18 @@
                     ".peg-grammar"
                 ],
                 "configuration": "./configuration.json"
+            },
+            {
+                "id": "pegjs",
+                "aliases": [
+                    "PEG.js",
+                    "pegjs",
+                    "peg.js"
+                ],
+                "extensions": [
+                    ".pegjs"
+                ],
+                "configuration": "./configuration.json"
             }
         ],
         "grammars": [
@@ -33,6 +45,11 @@
                 "language": "peg-grammar",
                 "scopeName": "grammar.pegjs",
                 "path": "./syntaxes/grammar.json"
+            },
+            {
+                "language": "pegjs",
+                "scopeName": "source.pegjs",
+                "path": "./syntaxes/pegjs.json"
             }
         ]
     }
