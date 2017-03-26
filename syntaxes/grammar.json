@@ -57,6 +57,9 @@
                 },
                 {
                     "include": "#character-class"
+                },
+                {
+                    "include": "#sequence"
                 }
             ]
         },
@@ -224,6 +227,22 @@
         "any-character": {
             "name": "string.unquoted.pegjs",
             "match": "\\."
+        },
+        "sequence": {
+            "name": "meta.group.braces.round.pegjs",
+            "begin": "\\(",
+            "beginCaptures": {
+                "0": { "name": "meta.brace.round.begin.pegjs" }
+            },
+            "end": "\\)",
+            "endCaptures": {
+                "0": { "name": "meta.brace.round.end.pegjs" }
+            },
+            "patterns": [
+                {
+                    "include": "#expression"
+                }
+            ]
         },
         "eos": {
             "name": "punctuation.terminator.statement.pegjs",
