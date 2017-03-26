@@ -142,6 +142,9 @@
             "name": "punctuation.definition.string.quoted.pegjs",
             "patterns": [
                 {
+                    "include": "#any-character"
+                },
+                {
                     "name": "string.quoted.double.pegjs",
                     "begin": "\"",
                     "end": "\"",
@@ -182,6 +185,10 @@
                     "match": "\\\\([1-7][0-7]{0,2}|[0-7]{2,3}|[bfnrtv0'\"\\\\]|x\\h{2}|u\\{\\h+\\}|u\\h{4})"
                 }
             ]
+        },
+        "any-character": {
+            "name": "string.unquoted",
+            "match": "\\."
         },
         "eos": {
             "name": "punctuation.terminator.statement.pegjs",
