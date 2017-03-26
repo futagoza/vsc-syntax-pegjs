@@ -54,6 +54,9 @@
                 },
                 {
                     "include": "#quantifier"
+                },
+                {
+                    "include": "#character-class"
                 }
             ]
         },
@@ -135,6 +138,38 @@
                 {
                     "name": "keyword.operator.arithmetic.pegjs",
                     "match": "[\\*\\+]"
+                }
+            ]
+        },
+        "character-class": {
+            "name": "string.regexp.pegjs",
+            "begin": "(\\[)\\s*(\\^?)",
+            "beginCaptures": {
+                "1": { "name": "punctuation.definition.string.begin.pegjs" },
+                "2": { "name": "keyword.operator.negate.pegjs" }
+            },
+            "end": "(\\])\\s*(i?)",
+            "endCaptures": {
+                "1": { "name": "punctuation.definition.string.end.pegjs" },
+                "2": { "name": "keyword.other.pegjs" }
+            },
+            "patterns": [
+                {
+                    "include": "#character-content"
+                }
+            ]
+        },
+        "character-content": {
+            "patterns": [
+                {
+                    "name": "constant.other.character-class.range.pegjs",
+                    "match": "-"
+                },
+                {
+                    "include": "#string-content"
+                },
+                {
+                    "match": "(\\\\\\[|\\\\\\])"
                 }
             ]
         },
