@@ -97,7 +97,7 @@
             ]
         },
         "initializer-label": {
-            "match": "([_$a-zA-Z][$\\w]*)\\s*(:)",
+            "match": "(\\$[$\\w]+|[_a-zA-Z][$\\w]*)\\s*(:)",
             "captures": {
                 "1": {
                     "name": "variable.parameter.function.pegjs"
@@ -109,7 +109,7 @@
         },
         "ruleName": {
             "name": "entity.name.class.pegjs",
-            "match": "[_$a-zA-Z][$\\w]*"
+            "match": "(\\$[$\\w]+|[_a-zA-Z][$\\w]*)"
         },
         "assignment": {
             "name": "keyword.operator.assignment",
