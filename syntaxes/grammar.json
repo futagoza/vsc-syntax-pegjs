@@ -149,12 +149,12 @@
         },
         "character-class": {
             "name": "string.regexp.pegjs",
-            "begin": "(\\[)\\s*(\\^?)",
+            "begin": "(\\[)(\\^?)",
             "beginCaptures": {
                 "1": { "name": "punctuation.definition.string.begin.pegjs" },
                 "2": { "name": "keyword.operator.negate.pegjs" }
             },
-            "end": "(\\])\\s*(i?)",
+            "end": "(\\])(i?)",
             "endCaptures": {
                 "1": { "name": "punctuation.definition.string.end.pegjs" },
                 "2": { "name": "keyword.other.pegjs" }
@@ -185,7 +185,7 @@
                 {
                     "name": "string.quoted.double.pegjs",
                     "begin": "\"",
-                    "end": "\"\\s*(i?)",
+                    "end": "\"(i?)",
                     "endCaptures": {
                         "1": { "name": "keyword.other.pegjs" }
                     },
@@ -202,7 +202,7 @@
                 {
                     "name": "string.quoted.single.pegjs",                    
                     "begin": "'",
-                    "end": "'\\s*(i?)",
+                    "end": "'(i?)",
                     "endCaptures": {
                         "1": { "name": "keyword.other.pegjs" }
                     },
