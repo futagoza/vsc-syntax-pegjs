@@ -48,6 +48,9 @@
                 },
                 {
                     "include": "#choice"
+                },
+                {
+                    "include": "#predicate"
                 }
             ]
         },
@@ -115,6 +118,10 @@
         "choice": {
             "name": "keyword.operator.logical",
             "match": "/"
+        },
+        "predicate": {
+            "name": "keyword.operator.bitwise",
+            "match": "[$&!]"
         },
         "string-literal": {
             "name": "punctuation.definition.string.quoted.pegjs",
