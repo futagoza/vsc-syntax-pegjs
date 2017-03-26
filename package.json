@@ -1,0 +1,39 @@
+{
+    "name": "pegjs-syntax",
+    "description": "Syntax highlighting for PEG.js in Visual Studio Code",
+    "version": "0.1.0-dev",
+    "publisher": "futagozaryuu",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "galleryBanner": {
+        "color": "#F5DA55",
+        "theme": "light"
+    },
+    "license": "MIT",
+    "contributes": {
+        "languages": [
+            {
+                "id": "peg-grammar",
+                "aliases": [
+                    "PEG",
+                    "peg"
+                ],
+                "extensions": [
+                    ".peg-grammar"
+                ],
+                "configuration": "./configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "peg-grammar",
+                "scopeName": "grammar.pegjs",
+                "path": "./syntaxes/grammar.json"
+            }
+        ]
+    }
+}
