@@ -9,13 +9,16 @@
             "include": "#comments"
         },
         {
+            "include": "#eos"
+        },
+        {
             "include": "#initializer-block"
         },
         {
-            "include": "#expressions"
+            "include": "#assignment"
         },
         {
-            "include": "#eos"
+            "include": "#expressions"
         }
     ],
     "repository": {
@@ -101,6 +104,10 @@
         "ruleName": {
             "name": "entity.name.class.pegjs",
             "match": "[_$a-zA-Z][$\\w]*"
+        },
+        "assignment": {
+            "name": "keyword.operator.rule",
+            "match": "="
         },
         "string-literal": {
             "name": "string.quoted.pegjs",
