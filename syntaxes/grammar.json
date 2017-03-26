@@ -51,6 +51,9 @@
                 },
                 {
                     "include": "#predicate"
+                },
+                {
+                    "include": "#quantifier"
                 }
             ]
         },
@@ -122,6 +125,18 @@
         "predicate": {
             "name": "keyword.operator.bitwise",
             "match": "[$&!]"
+        },
+        "quantifier": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.ternary.pegjs",
+                    "match": "\\?"
+                },
+                {
+                    "name": "keyword.operator.arithmetic.pegjs",
+                    "match": "[\\*\\+]"
+                }
+            ]
         },
         "string-literal": {
             "name": "punctuation.definition.string.quoted.pegjs",
