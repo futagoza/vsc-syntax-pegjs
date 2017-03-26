@@ -110,7 +110,7 @@
             "match": "="
         },
         "string-literal": {
-            "name": "string.quoted.pegjs",
+            "name": "punctuation.definition.string.quoted.pegjs",
             "patterns": [
                 {
                     "name": "string.quoted.double.pegjs",
